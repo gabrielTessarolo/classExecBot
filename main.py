@@ -20,8 +20,7 @@ def clickSeq(*args, slp=0.1):
 
 def login():
     # Coloque os dados
-    userData = {"login": "89034058115", "password": "o9979EqH"}
-    # userData = {"login": input("Login SIAP: "), "password": input("Senha SIAP: ")}
+    userData = {"login": input("Login SIAP: "), "password": input("Senha SIAP: ")}
     seletorX('//*[@id="txtLogin"]').send_keys(userData["login"])
     seletorX('//*[@id="txtSenha"]').send_keys(userData["password"])
 
